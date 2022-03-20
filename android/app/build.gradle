@@ -44,8 +44,8 @@ android {
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
         applicationId "com.example.flavorsexample"
-        minSdkVersion flutter.minSdkVersion
-        targetSdkVersion flutter.targetSdkVersion
+        minSdkVersion 26
+        targetSdkVersion 30
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
@@ -56,6 +56,26 @@ android {
             // Signing with the debug keys for now, so `flutter run --release` works.
             signingConfig signingConfigs.debug
         }
+
+        flavorDimension = "default"
+        productFlavor{
+            production{
+                dimensions "default"
+                resValue "string", "app_name", "Flutter Production"
+                applicationIdSuffix ""
+            }
+            staging{
+                dimensions "default"
+                resValue "string", "app_name", "Flutter Staging"
+                applicationIdSuffix ".stg"
+            }
+            development{
+                dimensions "default"
+                resValue "string", "app_name", "Flutter Development"
+                applicationIdSuffix ".dev"
+            }
+        }
+
     }
 }
 
