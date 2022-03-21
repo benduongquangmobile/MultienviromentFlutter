@@ -225,6 +225,7 @@ PLATFORMS
   universal-darwin-21
 
 DEPENDENCIES
+  faraday
   fastlane
   fastlane-plugin-firebase_app_distribution
   fastlane-plugin-test_center

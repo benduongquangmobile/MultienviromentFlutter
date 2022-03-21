@@ -79,7 +79,7 @@ android {
         production{
             dimension "default"
             resValue "string", "app_name", "Flutter Production"
-            applicationIdSuffix ""
+            applicationIdSuffix "production"
         }
         staging{
             dimension "default"

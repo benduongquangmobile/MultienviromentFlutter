@@ -15,10 +15,10 @@ For _fastlane_ installation instructions, see [Installing _fastlane_](https://do
 
 ## Android
 
-### android android_firebase_distribution
+### android android_firebase_distribution_development
 
 ```sh
-[bundle exec] fastlane android android_firebase_distribution
+[bundle exec] fastlane android android_firebase_distribution_development
 ```
 
 Build Android app, upload it to Firebase Distribution and invite testers automatically

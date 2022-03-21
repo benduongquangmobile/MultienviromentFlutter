@@ -17,10 +17,14 @@ default_platform(:android)
 
 platform :android do
   desc 'Build Android app, upload it to Firebase Distribution and invite testers automatically'
-  lane :android_firebase_distribution do |_options|
+  lane :android_firebase_distribution_development do |_options|
+    gradle(
+      task: 'clean'
+    )
+    sh('flutter build apk --target lib/main_development.dart --flavor development')
     firebase_app_distribution(
       app: '1:381565657841:android:e6502d00cbd73f90997f50',
-      firebase_cli_token: '1//09WrD_2heL6PYCgYIARAAGAkSNwF-L9IrNf6OPcptzAxCFPAZFfN4acYIP5M1MDfNiyhXIjPT0BKwyQhnXEtzXDEc7MepZCHoGi4',
+      firebase_cli_token: File.read('../../.firebase_cli_token').strip,
       apk_path: '../build/app/outputs/apk/development/release/app-development-release.apk'
     )
   end
