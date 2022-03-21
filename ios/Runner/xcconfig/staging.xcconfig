@@ -1,0 +1,5 @@
+#include "Generated.xcconfig"
+BUNDLE_ID_SUFFIX=.stg
+PRODUCT_BUNDLE_IDENTIFIER=com.com.example.flavorsexample.stg
+FLUTTER_TARGET=lib/main_staging.dart
+APP_NAME=EcooneDemoStaging

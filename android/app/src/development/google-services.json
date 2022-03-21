@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "936163165967",
+    "project_id": "ecoonedevdemo",
+    "storage_bucket": "ecoonedevdemo.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:936163165967:android:595baf675f5872e40da07a",
+        "android_client_info": {
+          "package_name": "com.example.flavorsexample.dev"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "936163165967-707319usive4ei2p103cub26nh1pjbbc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDLbDQ_w4kGJHo7PoJ8QL7eVm5T-TF3yYw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "936163165967-707319usive4ei2p103cub26nh1pjbbc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
